@@ -16,7 +16,7 @@ function setup() {
 function draw() {
   background(0);
   noFill();
-  translate(width / 2, 3 * height / 4);
+  translate(width / 2, 3 * height / 4.5);
   drawTriangle(0, 0, width / 4);
 }
 
@@ -34,7 +34,7 @@ function drawTriangle(x, y, w) {
     //All of our triangles are equilateral
     //With a bit of Pythagoras magic can we easily find the height of the triangle
     let h = 0.5 * w * sqrt(3);
-    triangle(x - w / 2, y - h / 2, x + w / 2, y - h / 2, x, y + h / 2);
+    //triangle(x - w / 2, y - h / 2, x + w / 2, y - h / 2, x, y + h / 2);
 
     //That was the easy part. Now we have to fit the 10PRINT in there
     //The biggest problem is the decreasing width in our triangle
